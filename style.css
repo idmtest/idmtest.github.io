@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #354;
+}
+
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: grey;
+  text-align: center;
+  border-radius: 100px;
+  }
+  
+ .box h2{
+  color: white;
+  //text-transform: uppercase;
+  font-weight: 1500;
+  text-align: center;
+}
+
+.box h{
+	display: none;
+}
+
+.box h1{
+	color: white;
+	text-transform: uppercase;
+  font-weight: 150;
+  text-align: center;
+}
+
+.box input[id = "myA"],.box input[id = "myB"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  position: relative;
+  position:relative;
+  width: 150px;
+}
+
+.box input[id = "myA"]:focus,.box input[id = "myB"]:focus{
+  width: 250px;
+  border-color: #2219B2;
+}
+
+.box input[id = "btn"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  position: relative;
+  position:relative;
+}
+.box input[type = "btn"]:hover{
+  background: #2ecc71;
+  text-align: center;
+}
