@@ -1,4 +1,30 @@
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Confirm Box</h2>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+(async () => {
+let response = await fetch('https://kav-api.kovalev.team/servodrive/lastActualData?servoDriveId=1');
+
+let text = await response.json(); // прочитать тело ответа как текст
+
+alert(text[0].actPhaseU);
+})()
+}
+</script>
+
+</body>
+</html>
+
+<!-- <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
 	<!-- --> <link rel="stylesheet" href="style.css"> 
@@ -18,6 +44,6 @@
 <input type="button" id="btn" value="Считать"> 
 <script src="scriptmy.js"></script> 
 
-</form>
+</form> -->
 
 
